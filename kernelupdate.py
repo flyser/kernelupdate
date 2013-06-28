@@ -26,7 +26,7 @@ makeopts = ["-j4"]
 #   5. location of kernel source
 #   6. path to the config file
 #install_command = ["echo", "--"]
-install_command = [os.path.dirname(sys.argv[0])+"/installkernel.sh"]
+install_command = [os.path.abspath(os.path.dirname(sys.argv[0])+"/installkernel.sh")]
 
 
 class KernelInfo:
